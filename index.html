@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+        </script>
+        <script src="regex.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="page1">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Regex Playground
+                </h3>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textbox">
+                            Your ReGex
+                        </label>
+                        <input id="textbox" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textarea">
+                            Sample Text
+                        </label>
+                        <textarea id="textarea" placeholder="">
+132 Hello World 324
+                        </textarea>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>
+                            Modifiers:
+                        </legend>
+                        <input name="checkbox-global" id="checkbox-global" type="checkbox" class="checkbox" />
+                        <label for="checkbox-global">
+                            Global
+                        </label>
+                        <input name="checkbox-insensitive" id="checkbox-insensitive" type="checkbox" class="checkbox" />
+                        <label for="checkbox-insensitive">
+                            Case-Insensitive
+                        </label>
+                        <input name="checkbox-multiline" id="checkbox-multiline" type="checkbox" class="checkbox" />
+                        <label for="checkbox-multiline">
+                            Multiline    
+                        </label>
+                    </fieldset>
+                </div>
+                <center><b>Parsed output:
+                <div id="output">
+                    
+                </div>
+                </b></center>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                     &copy; Jason Gray 2012
+                </h3>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>
